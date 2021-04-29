@@ -1,18 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Rubik", sans-serif;
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    margin: 0;
+    background-color: steelblue;
+}
 
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    background-color: lightblue;
+    font-family: inherit;
+    padding: 15px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.form-control {
+    position: relative;
+    width: 300px;
+    margin: 20px 0 40px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: none;
+    border-bottom: 2px solid lightblue;
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    transition: transform 0.1s ease;
+}
+
+.form-control input:focus + label,
+.form-control input:valid + label {
+    transform: translateY(-20px);
+    color: lightblue;
 }
